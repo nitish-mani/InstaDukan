@@ -1,0 +1,181 @@
+body {
+  background-color: aliceblue;
+}
+
+.parent-div {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.header-div > h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: left;
+}
+.header-div > .home-h2 {
+  grid-column-start: 4;
+  /* grid-column-end: 4; */
+  text-align: right;
+  cursor: pointer;
+}
+.header-div > .home-h2:hover {
+  color: #275784;
+}
+.header-div > .cart-h2 {
+  grid-column-start: 5;
+  /* grid-column-end: 4; */
+  text-align: right;
+  cursor: pointer;
+}
+.header-div > .cart-h2:hover {
+  color: #275784;
+}
+.card-div {
+  width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 50px;
+}
+.parent-card {
+  position: relative;
+  width: 40rem;
+  height: 25rem;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  box-shadow: 1px 2px 15px rgb(127, 127, 127);
+
+  /* border: 1px solid black; */
+}
+
+.parent-card-1st {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.parent-card-1st > img {
+  width: 100%;
+}
+.parent-card > .add-to-cart {
+  position: absolute;
+  width: 97%;
+  background-color: #072541;
+  color: whitesmoke;
+  padding: 5px;
+  bottom: -21px;
+  cursor: pointer;
+}
+.parent-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 100%;
+  text-align: center;
+}
+.input-details {
+  margin-top: 50px;
+  width: fit-content;
+  /* height: 20rem; */
+  padding: 40px;
+  box-shadow: 1px 1px 50px black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-details > div {
+  display: flex;
+  justify-content: space-between;
+}
+.input-submit {
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(31, 31, 81);
+  padding: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.more-passengers {
+  border: none;
+  padding: 5px;
+  color: whitesmoke;
+  background-color: rgb(131, 129, 129);
+  cursor: pointer;
+}
+.parent-cart {
+  display: grid;
+  /* border: 1px solid black; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.parent-cart-div {
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* border: 1px solid black; */
+}
+.cart-div {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  box-shadow: 1px 1px 15px black;
+  margin: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+.cardNo-cart {
+  width: 100%;
+  background-color: chocolate;
+  color: whitesmoke;
+  text-align: center;
+  padding: 2px;
+}
+.parent-cart-div1 {
+  width: 300px;
+  text-align: center;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.parent-cart-div1 > button {
+  width: 97%;
+  background-color: #072541;
+  color: whitesmoke;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+.parent-cart > h1 {
+  grid-column-start: 3;
+  /* border: 1px solid black; */
+}
+.orderPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* border: 1px solid black; */
+  align-items: center;
+}
+.parent-cart1 {
+  grid-column-start: 3;
+  display: flex;
+  flex-direction: column;
+}
+.home-div {
+  width: 200px;
+  background-color: #072541;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
